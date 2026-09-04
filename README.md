@@ -60,4 +60,13 @@ Categories → Event_Enrolments	1 : M	One Category receives many Enrolments
 Users → Event_Enrolments	1 : M	One Participant submits many Enrolments over time
 Event_Enrolments → Results	1 : 1	Each Enrolment produces at most one Result
 
-The SQL schema in Section C is built to match this ERD exactly. Any deliberate deviation between the ERD and the SQL script is documented in Deviations from the Plan below. 
+The SQL schema in Section C is built to match this ERD exactly. Any deliberate deviation between the ERD and the SQL script is documented in Deviations from the Plan below.
+The SQL schema in Section C is built to match this ERD exactly. Any deliberate deviation between the ERD and the SQL script is documented in Deviations from the Plan below.
+
+API Endpoint Plan
+
+The full endpoint plan — covering Authentication, User Profile, Events, Categories, Event Enrolments, and Results — is available at /docs/api_endpoint_plan.md.
+
+It documents, for every endpoint: HTTP method, route, description, required role, request body, and expected response — planned ahead of any code being written, per the PoE brief.
+
+The implemented API in Part 2 is built to closely match this plan.
