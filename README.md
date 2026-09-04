@@ -87,4 +87,7 @@ Pending Payment · Active · Cancelled · Transferred · Waitlisted · Checked I
 
 Finished · DNF · DNS · DSQ · Cut-Off · Provisional · Official
 
-</details>
+</details
+  Database Schema — SQL Script (Section C)
+
+The full CREATE TABLE script lives at /docs/schema.sql (or /db/schema.sql, depending on the final repo layout) and implements the six entities from the ERD above exactly as modelled. Rather than pasting the raw SQL here, this section describes in words what that script sets up and why, so the README stays readable for anyone reviewing the design without needing to open the script itself.
