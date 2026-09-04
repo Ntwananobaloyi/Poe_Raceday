@@ -35,3 +35,17 @@ Key Features
 🌦️ Live weather information for upcoming events
 🗺️ Route/map information per event
 📦 Fully containerised, cloud-aware deployment (Part 3)
+
+Database Design (ERD)
+
+The full Entity Relationship Diagram is available at /docs/raceday_erd.png.
+
+The data model consists of 6 core entities:
+
+Entity	Description
+Users	Stores both Organisers and Participants, distinguished by a role attribute
+Events	Races/events created by an Organiser
+Categories	Distance/entry options within an event (e.g. 10km Open)
+Routes	Route and map information tied to an event
+Event_Enrolments	A Participant's entry into a specific Category
+Results	The captured finish-line outcome for a single Enrolment
