@@ -70,3 +70,21 @@ The full endpoint plan — covering Authentication, User Profile, Events, Catego
 It documents, for every endpoint: HTTP method, route, description, required role, request body, and expected response — planned ahead of any code being written, per the PoE brief.
 
 The implemented API in Part 2 is built to closely match this plan.
+
+Status Values
+
+Three entities use a status attribute as a controlled set of values rather than free text:
+
+<details> <summary><strong>Events.status</strong></summary>
+
+Draft · Open for Entries · Entries Closed · In Progress · Completed · Cancelled · Postponed
+
+</details> <details> <summary><strong>Event_Enrolments.status</strong></summary>
+
+Pending Payment · Active · Cancelled · Transferred · Waitlisted · Checked In · No Show
+
+</details> <details> <summary><strong>Results.status</strong></summary>
+
+Finished · DNF · DNS · DSQ · Cut-Off · Provisional · Official
+
+</details>
