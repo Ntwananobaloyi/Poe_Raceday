@@ -49,3 +49,15 @@ Categories	Distance/entry options within an event (e.g. 10km Open)
 Routes	Route and map information tied to an event
 Event_Enrolments	A Participant's entry into a specific Category
 Results	The captured finish-line outcome for a single Enrolment
+
+Relationship summary:
+
+Relationship	Cardinality	Notes
+Users → Events	1 : M	One Organiser creates many Events
+Events → Categories	1 : M	One Event offers many Categories
+Events → Routes	1 : M	One Event can have multiple Routes
+Categories → Event_Enrolments	1 : M	One Category receives many Enrolments
+Users → Event_Enrolments	1 : M	One Participant submits many Enrolments over time
+Event_Enrolments → Results	1 : 1	Each Enrolment produces at most one Result
+
+The SQL schema in Section C is built to match this ERD exactly. Any deliberate deviation between the ERD and the SQL script is documented in Deviations from the Plan below. 
