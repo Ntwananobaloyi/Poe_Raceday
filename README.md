@@ -16,3 +16,22 @@ Getting Started
 Environment Variables
 Running the Project
 Project Roadmap
+
+Project Overview
+
+RaceDay allows two types of users to interact with the platform:
+
+Event Organisers — create and manage events, define entry categories, and capture participant results.
+Participants — browse upcoming events, enter races, track their personal performance history, and prepare for race day using live weather and route information.
+
+The system is built as a containerised, API-driven platform with a relational database backing it, designed to scale from a single community fun run to a large multi-category event like the Cape Town Cycle Tour.
+
+Key Features
+🔐 Secure user registration and authentication (Organiser / Participant roles)
+📅 Full CRUD event management for Organisers
+🏷️ Multiple entry categories per event (e.g. 5km, 10km, Half Marathon)
+📝 Online event entry and enrolment for Participants
+🏆 Results capture and personal performance history tracking
+🌦️ Live weather information for upcoming events
+🗺️ Route/map information per event
+📦 Fully containerised, cloud-aware deployment (Part 3)
