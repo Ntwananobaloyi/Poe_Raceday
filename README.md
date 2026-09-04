@@ -91,3 +91,5 @@ Finished · DNF · DNS · DSQ · Cut-Off · Provisional · Official
   Database Schema — SQL Script (Section C)
 
 The full CREATE TABLE script lives at /docs/schema.sql (or /db/schema.sql, depending on the final repo layout) and implements the six entities from the ERD above exactly as modelled. Rather than pasting the raw SQL here, this section describes in words what that script sets up and why, so the README stays readable for anyone reviewing the design without needing to open the script itself.
+
+Users table. Holds every account on the platform, whether Organiser or Participant. user_id is the primary key and auto-increments. email carries a uniqueness constraint so no two accounts can register with the same address, and it's also indexed since login looks it up on every request. password_hash never stores a plain-text password — only the hashed value. role is restricted to a small fixed set of values (Organiser or Participant) using a check constraint rather than free text, to stop invalid roles being inserted. created_at defaults to the current timestamp automatically, so the application never has to set it manually.
